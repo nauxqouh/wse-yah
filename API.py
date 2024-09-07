@@ -48,5 +48,5 @@ async def query_head(request: Request):
     # Respond with a 200 OK status for HEAD requests
     return {"status": "HEAD request successful"}
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     uvicorn.run(app, host="0.0.0.0", port=8000)
